@@ -1,4 +1,4 @@
-FROM php:8.1-cli
+FROM php:8.3-cli
 
 RUN apt-get update && apt-get install -y unzip libzip-dev libpng-dev libjpeg-dev libfreetype6-dev libonig-dev sqlite3 libsqlite3-dev git curl && \
     docker-php-ext-install pdo pdo_mysql mbstring zip gd
